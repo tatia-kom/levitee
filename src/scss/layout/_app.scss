@@ -1,0 +1,172 @@
+@import "layout/var";
+
+html, body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    color: $black;
+    font-family: $font;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    transition: 0.3s;
+
+    &.fixed {
+        overflow: hidden;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-weight: normal;
+}
+header, footer, section, div, span, p, button, a, input, textarea, form {
+    box-sizing: border-box;
+}
+
+button,input,textarea,select{
+    outline: none;
+}
+button {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:focus {
+    outline: none;
+}
+
+form {
+    margin: 0;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width: $md) {
+        width: 932px;
+    }
+
+    @media (max-width: $sm) {
+        width: calc(100vw - 128px);
+    }
+
+    @media (max-width: $xs) {
+        width: calc(100% - 30px);
+    }
+}
+
+.button {
+    background: $sand;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    width: 240px;
+    height: 55px;
+    transition: 0.3s;
+    position: relative;
+
+    @media (max-width: $xs) {
+        width: 100%;
+    }
+
+    &:hover {
+        background: $violet;
+        color: $light;
+    }
+
+    &--full {
+        width: 100%;
+    }
+
+    &--violet {
+        background: $violet;
+        color: $light;
+
+        &:hover {
+            background: $sand;
+            color: $black;
+        }
+    }
+
+    &--center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.section {
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width: $sm) {
+        padding: 100px 0;
+    }
+
+    @media (max-width: $xs) {
+        padding: 120px 0;
+    }
+
+    .container {
+        position: relative;
+    }
+}
+
+.title {
+    @extend %h2;
+
+    position: relative;
+
+    @media (max-width: $xs) {
+        font-size: 40px;
+        line-height: 58px;
+    }
+
+    &--center {
+        text-align: center;
+
+        @media (max-width: $xs) {
+            text-align: left;
+        }
+    }
+
+    &--white {
+        color: $light;
+    }
+}

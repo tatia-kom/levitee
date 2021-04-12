@@ -1,0 +1,157 @@
+.advantages {
+  padding: 120px 0;
+  position: relative;
+
+  @media (max-width: $sm) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: $xs) {
+    padding: 120px 0;
+  }
+
+  &__text {
+    margin-top: 24px;
+    max-width: 630px;
+
+    @media (max-width: $sm) {
+      margin-top: 16px;
+    }
+  }
+
+  &__slider {
+    margin-top: 92px;
+    padding-bottom: 87px;
+
+    @media (max-width: $sm) {
+      margin-top: 140px;
+    }
+
+    .slick-list {
+      overflow: visible;
+    }
+
+    .slick-arrow {
+      width: 40px;
+      height: 40px;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-size: 0;
+      color: transparent;
+      transition: 0.3s;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      position: absolute;
+      bottom: calc(100% + 202px);
+      right: 0;
+
+      @media (max-width: $sm) {
+        bottom: calc(100% + 73px);
+      }
+
+      &:hover {
+        border-color: $violet;
+      }
+
+      &.slick-prev {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='10' viewBox='0 0 24 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 5C3.31717 6.10526 7.39088 8 9.9515 10L8.14743 5.52632L24 5.52632V4.47368L8.14743 4.47368L9.9515 0C7.39088 2 3.31717 3.89474 0 5Z' fill='%23111429'/%3e%3c/svg%3e ");
+        right: 54px;
+      }
+
+      &.slick-next {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='10' viewBox='0 0 24 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M24 5C20.6828 3.89474 16.6091 2 14.0485 0L15.8526 4.47368H0V5.52632H15.8526L14.0485 10C16.6091 8 20.6828 6.10526 24 5Z' fill='%23111429'/%3e%3c/svg%3e ");
+      }
+    }
+
+    .slick-dots {
+      position: absolute;
+      list-style: none;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      li {
+        margin: 0 10px;
+
+        button {
+          font-size: 0;
+          color: transparent;
+          width: 10px;
+          height: 10px;
+          border: 1px solid $black;
+          transform: rotate(45deg);
+          transition: 0.3s;
+        }
+
+        &.slick-active {
+          button {
+            background: $black;
+          }
+        }
+      }
+    }
+  }
+
+  &__slide {
+    outline: none;
+    margin: 0 15px;
+
+    &.slick-current {
+      .advantages-item {
+        background: #153132;
+        color: $light;
+        transform: scale(1.16);
+
+        @media (max-width: $xs) {
+          width: 270px;
+        }
+      }
+    }
+  }
+
+  .title {
+    max-width: 751px;
+  }
+}
+
+.advantages-item {
+  width: 360px;
+  height: 310px;
+  padding: 30px;
+  background: $light;
+  box-shadow: 10px 22px 54px rgba(21, 49, 50, 0.08);
+  border-radius: 10px;
+  transition: 0.3s;
+
+  @media (max-width: $xs) {
+    padding: 50px 16px 0;
+  }
+
+  &__num {
+    text-align: center;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 70px;
+    margin-top: 8px;
+
+    @media (max-width: $xs) {
+      font-size: 48px;
+      line-height: 55px;
+      margin-top: 0;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    margin-top: 13px;
+
+    @media (max-width: $xs) {
+      margin-top: 24px;
+    }
+  }
+}

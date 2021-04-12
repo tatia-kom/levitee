@@ -1,0 +1,151 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Levitee
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+        link(rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico")
+    body
+        section.top
+            div.top__ellipse1
+            div.top__ellipse2
+            div.top__ellipse3
+            div.top__ellipse4
+
+            // HEADER
+            include ../components/header.pug
+
+            div.container
+                div.top__flex
+                    div.top__content
+                        h1.top__title Manifest your mind
+                        p.top__text We are on a mission to enhance the wellbeing of society.
+                        button.button.button--violet Become an investor
+                    div.top__img
+                        img(src="img/head.svg" alt="")
+                    nav.top-menu
+                        div.top-menu__item.top-menu__item--active
+                            a.top-menu__link(href="") Learn
+                        div.top-menu__item
+                            span.top-menu__link News
+                            div.top-menu__list
+                                a.top-menu__sublink(href="") Press Releases
+                                a.top-menu__sublink(href="") In the Media
+                        div.top-menu__item
+                            span.top-menu__link About Us
+                            div.top-menu__list
+                                a.top-menu__sublink(href="") Vision & Values
+                                a.top-menu__sublink(href="") Our Team
+                        div.top-menu__item
+                            span.top-menu__link Investors
+                            div.top-menu__list
+                                a.top-menu__sublink(href="") For Investors
+                                a.top-menu__sublink(href="") Stock Information
+                        div.top-menu__item
+                            span.top-menu__link Divisions
+                            div.top-menu__list
+                                a.top-menu__sublink(href="") MONKE
+                                a.top-menu__sublink(href="") Sporeo
+
+            div.advantages
+                div.container
+                    h2.title Preventative. Restorative. Transformative.
+                    p.advantages__text There is a powerful human ability to heal and elevate oneself when access to the transformative benefits of standardized and quality-controlled integrative wellness tools are available.
+
+                    div.advantages__slider
+                        div.advantages__slide
+                            div.advantages-item
+                                p.advantages-item__num 264 <br />million
+                                p.advantages-item__text People suffering from depression. People suffering
+                        div.advantages__slide
+                            div.advantages-item
+                                p.advantages-item__num 71 <br />million
+                                p.advantages-item__text People suffering from drug use disorder with only 20% receiving treatment
+                        div.advantages__slide
+                            div.advantages-item
+                                p.advantages-item__num 264 <br />million
+                                p.advantages-item__text People suffering from depression. People suffering
+                        div.advantages__slide
+                            div.advantages-item
+                                p.advantages-item__num 264 <br />million
+                                p.advantages-item__text People suffering from depression. People suffering
+                        div.advantages__slide
+                            div.advantages-item
+                                p.advantages-item__num 792 <br />million
+                                p.advantages-item__text People globally living with <br />a mental health or substance use disorder
+
+        section.section.index-latest
+            div.container.index-latest__flex
+                h2.title.title--white Latest News CSE: LVT
+
+                a.index-latest__card.index-latest__card--white(href="")
+                    p.index-latest__date 30 October, 2019
+                    p.index-latest__title Tips To Send & Receive Ti To Send & Receive
+                    p.index-latest__description We help remote student care teams colla better. We help remote student care teams.We help remote student,remote student care teams collaborate better....
+
+                a.index-latest__card.index-latest__card--violet(href="") Learn more
+
+        section.section.index-media
+            div.container
+                div.index-media__bg1
+                    img(src="img/index-media-bg1.svg" alt="")
+                div.index-media__bg2
+                    img(src="img/index-media-bg2.svg" alt="")
+                div.index-media__bg3
+                    img(src="img/index-media-bg3.svg" alt="")
+
+                h2.title.title--center In the Media
+
+                div.index-media__flex
+                    a.media-card(href="")
+                        div.media-card__img
+                            img(src="img/media1.jpg" alt="")
+                        div.media-card__content
+                            p.media-card__logo
+                                img(src="img/reuters-logo.svg" alt="")
+                            div.media-card__info
+                                span 30 October, 2019
+                                span 15 min read
+                            p.media-card__title Tips To Send & Receive Money Quick and Safely
+                    a.media-card(href="")
+                        div.media-card__img
+                            img(src="img/media2.jpg" alt="")
+                        div.media-card__content
+                            p.media-card__logo
+                                img(src="img/forbes-logo.svg" alt="")
+                            div.media-card__info
+                                span 30 October, 2019
+                                span 15 min read
+                            p.media-card__title Tips To Send & Receive Money Quick and Safely
+                    a.media-card(href="")
+                        div.media-card__img
+                            img(src="img/media3.jpg" alt="")
+                        div.media-card__content
+                            p.media-card__logo
+                                img(src="img/forbes-logo.svg" alt="")
+                            div.media-card__info
+                                span 30 October, 2019
+                                span 15 min read
+                            p.media-card__title Tips To Send & Receive Money Quick and Safely
+
+                    a.media-card(href="")
+                        div.media-card__img
+                            img(src="img/media3.jpg" alt="")
+                        div.media-card__content
+                            p.media-card__logo
+                                img(src="img/forbes-logo.svg" alt="")
+                            div.media-card__info
+                                span 30 October, 2019
+                                span 15 min read
+                            p.media-card__title Tips To Send & Receive Money Quick and Safely
+
+                a.button.button--violet.button--center(href="") Read more
+
+
+        // FOOTER
+        include ../components/footer.pug
+
+        // SCRIPTS
+        include ../components/scripts.pug
