@@ -1,0 +1,278 @@
+.menu-screen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: $black;
+  z-index: 899;
+  pointer-events: none;
+  transition: 0.5s;
+  transform: translateX(100%);
+  overflow: auto;
+
+  &--active {
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+.menu-screen-top {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $sm) {
+    padding-right: 50px;
+  }
+
+  @media (max-width: $xs) {
+    margin-top: 50px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+
+    div {
+      width: 50px;
+      height: 50px;
+      flex-shrink: 0;
+
+      @media (max-width: $sm) {
+        background: url('../img/logo-icon-responsive.svg');
+
+        img {
+          display: none;
+        }
+      }
+    }
+
+    & > img {
+      display: block;
+
+      &:last-child {
+        margin-left: 13px;
+
+        @media (max-width: $sm) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__lang {
+    @extend %t2;
+
+    color: $light;
+    margin-left: 10px;
+    opacity: 0.4;
+    display: block;
+
+    @media (max-width: $sm) {
+      font-size: 24px;
+
+      &:last-child {
+        margin-right: auto;
+      }
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &--active {
+      opacity: 1;
+      font-size: 14px;
+      font-weight: bold;
+
+      @media (max-width: $sm) {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.menu-screen-main {
+  flex-grow: 1;
+  padding-top: 58px;
+
+  @media (max-width: $sm) {
+    padding-top: 100px;
+  }
+
+  @media (max-width: $xs) {
+    padding-top: 48px;
+  }
+
+  &__flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    & > span {
+      @media (max-width: $sm) {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 58px 85px 58px 0;
+
+    @media (max-width: $sm) {
+      margin: 0 85px 40px 0;
+    }
+  }
+
+  &__big {
+    @extend %h3;
+
+    color: $light;
+    padding-left: 36px;
+    position: relative;
+    margin-bottom: 14px;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      border: 1px solid $light;
+      left: 0;
+      top: 7px;
+      transform: rotate(45deg);
+      transition: 0.3s;
+    }
+  }
+
+  a.menu-screen-main__big {
+    cursor: pointer;
+
+    &:hover {
+      &:before {
+        background: $light;
+      }
+    }
+  }
+
+  &__link {
+    @extend %t1;
+
+    color: $light;
+    padding-left: 30px;
+    position: relative;
+    margin-left: 36px;
+    margin-top: 9px;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border: 1px solid $light;
+      left: 0;
+      top: 7px;
+      transform: rotate(45deg);
+      transition: 0.3s;
+    }
+
+    &:hover {
+      &:before {
+        background: $light;
+      }
+    }
+  }
+}
+
+.menu-screen-bottom {
+  border-top: 1px solid rgba(247, 246, 242, 0.2);
+  padding: 56px 0;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $xs) {
+    flex-direction: column;
+    padding-top: 7px;
+    padding-bottom: 51px;
+  }
+
+  &__form {
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+
+  &__side {
+    @media (max-width: $xs) {
+      margin-top: 17px;
+    }
+  }
+
+  &__flex {
+    display: flex;
+  }
+
+  &__title {
+    @extend %h3;
+
+    color: $light;
+    margin-bottom: 26px;
+    width: 100%;
+
+    @media (max-width: $xs) {
+      margin-bottom: 20px;
+    }
+
+    &--sand {
+      color: $sand;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__input {
+    @extend %t1;
+
+    color: $light;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid $light;
+    width: 269px;
+    flex-shrink: 0;
+
+    @include placeholderColor($light);
+  }
+
+  &__link {
+    @extend %t1;
+
+    color: $light;
+
+    &:hover {
+      color: $sand;
+    }
+
+    & + .menu-screen-bottom__link {
+      margin-left: 24px;
+    }
+  }
+
+  .button {
+    width: 192px;
+    flex-shrink: 0;
+    margin-left: 18px;
+  }
+}

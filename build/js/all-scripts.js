@@ -3131,15 +3131,24 @@ $(document).ready(function(e) {
     $(window).scroll(function(e) {
         if ($(window).scrollTop() > 0) {
             $('.header').addClass('header--scroll');
+
+            if ($(window).scrollTop() > $('#startMenu').offset().top) {
+                $('.header-menu').addClass('header-menu--visible');
+            }
+            else {
+                $('.header-menu').removeClass('header-menu--visible');
+            }
         }
         else {
             $('.header').removeClass('header--scroll');
         }
     });
 
-    $('.header__mobile-menu').click(function(e) {
+    $('.header-menu').click(function(e) {
         e.preventDefault();
-        $('.header').toggleClass('header--active');
+
+        $(this).toggleClass('header-menu--active');
+        $('.menu-screen').toggleClass('menu-screen--active');
         $('body').toggleClass('fixed');
     });
 
