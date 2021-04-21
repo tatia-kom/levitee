@@ -1,0 +1,62 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Our Divisions | Levitee
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+        link(rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico")
+    body
+        section.top
+            div.top__ellipse1
+            div.top__ellipse2
+            div.top__ellipse3-press
+            div.top__ellipse4-press
+
+            // HEADER
+            include ../components/header.pug
+
+            div.container
+                div.top__flex
+                    div.top__content
+                        h1.top__title Our divisions
+                        p.top__text Levitee Labs has established a profitable portfolio of integrated wellness assets to fund advancements in alternative medicine and psychedelic pharmacology.
+                        button.button.button--violet Become an investor
+                    div.top__img
+                        img(src="img/head.svg" alt="")
+
+                    include ../components/top-menu.pug
+                    +topMenu(5)
+
+            div.divisions#startMenu
+                div.container
+                    div.divisions-block
+                        div.divisions-block__content
+                            div.divisions-block__logo
+                                img(src="img/monke.svg" alt="")
+                            p.divisions-block__title MonkE Nutra
+                            p.divisions-block__text Monk-E is a premium functional mushroom nutraceutical company with curated artisanal mushroom blends designed to help the mind and body. A formulation is also in development which will include a psychedelic component and be sold in jurisdictions where it is legal.
+                            button.button.button--violet Learn more
+                        div.divisions-block__img
+                            img(src="img/monke-img.png" alt="")
+
+                    div.divisions-block.divisions-block--reverse
+                        div.divisions-block__content
+                            div.divisions-block__logo
+                                img(src="img/sporeo.png" alt="")
+                            p.divisions-block__title Sporeo Supply
+                            p.divisions-block__text With key partnerships and distribution channels in place, Sporeo Supply plans to soon offer access to a centralized portal with the full range of required growing materials for consumers and large scale cultivation of mushrooms.
+                            button.button.button--violet Learn more
+                        div.divisions-block__img
+                            img(src="img/monke-img.png" alt="")
+
+        // FOOTER
+        include ../components/footer.pug
+
+        // MENU SCREEN
+        include ../components/menu-screen.pug
+
+
+        // SCRIPTS
+        include ../components/scripts.pug
