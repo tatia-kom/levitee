@@ -1,0 +1,43 @@
+.press-item {
+  padding: 30px;
+  background: $light;
+  box-shadow: 10px 22px 54px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+
+  @media (max-width: $xs) {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+
+  &__date {
+    @extend %t2;
+
+    color: $black;
+    margin-bottom: 12px;
+
+    @media (max-width: $xs) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__title {
+    @extend %h3;
+
+    color: $black;
+    margin-bottom: 25px;
+
+    @media (max-width: $xs) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__text {
+    @extend %t1;
+
+    color: $black;
+
+    p {
+      margin-bottom: 30px;
+    }
+  }
+}

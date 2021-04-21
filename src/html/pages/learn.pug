@@ -1,0 +1,113 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Learn | Levitee
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+        link(rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico")
+    body
+        section.top
+            div.top__ellipse1
+            div.top__ellipse2
+            div.top__ellipse3-press
+            div.top__ellipse4-press
+
+            // HEADER
+            include ../components/header.pug
+
+            div.container
+                div.top__flex
+                    div.top__content
+                        h1.top__title Learn useful facts
+                        p.top__text We are on a mission to enhance the wellbeing of society.
+                        button.button.button--violet Become an investor
+                    div.top__img
+                        img(src="img/head.svg" alt="")
+
+                    include ../components/top-menu.pug
+                    +topMenu(1)
+
+            div.press#startMenu
+                div.container
+                    h2.title Educational articles
+                    p.press__text When there is access to the knowledge and benefits of standardized and quality-controlled integrated wellness tools, a person has a powerful ability to heal and uplift themselves.
+
+                    div.press__flex
+                        div.press__content
+                            div.press-filters
+                                form.press-search.press-search--media
+                                    input.press-search__input(type="text" placeholder="Search by keywords…")
+                                    button.press-search__button
+
+                            div.press__media
+                                a.index-latest__card(href="")
+                                    p.index-latest__date 30 October, 2019
+                                        span 15 min read
+                                    p.index-latest__title Tips To Send & Receive Ti To Send & Receive
+                                    p.index-latest__description We help remote student care teams colla better. We help remote student care teams.We help remote student,remote student care teams collaborate better....
+                                a.index-latest__card(href="")
+                                    p.index-latest__date 30 October, 2019
+                                        span 15 min read
+                                    p.index-latest__title Tips To Send & Receive Ti To Send & Receive
+                                    p.index-latest__description We help remote student care teams colla better. We help remote student care teams.We help remote student,remote student care teams collaborate better....
+                                a.index-latest__card(href="")
+                                    p.index-latest__date 30 October, 2019
+                                        span 15 min read
+                                    p.index-latest__title Tips To Send & Receive Ti To Send & Receive
+                                    p.index-latest__description We help remote student care teams colla better. We help remote student care teams.We help remote student,remote student care teams collaborate better....
+                                a.index-latest__card(href="")
+                                    p.index-latest__date 30 October, 2019
+                                        span 15 min read
+                                    p.index-latest__title Tips To Send & Receive Ti To Send & Receive
+                                    p.index-latest__description We help remote student care teams colla better. We help remote student care teams.We help remote student,remote student care teams collaborate better....
+                                a.index-latest__card(href="")
+                                    p.index-latest__date 30 October, 2019
+                                        span 15 min read
+                                    p.index-latest__title Tips To Send & Receive Ti To Send & Receive
+                                    p.index-latest__description We help remote student care teams colla better. We help remote student care teams.We help remote student,remote student care teams collaborate better....
+                                a.index-latest__card(href="")
+                                    p.index-latest__date 30 October, 2019
+                                        span 15 min read
+                                    p.index-latest__title Tips To Send & Receive Ti To Send & Receive
+                                    p.index-latest__description We help remote student care teams colla better. We help remote student care teams.We help remote student,remote student care teams collaborate better....
+
+
+                            div.pagination
+                                div.pagination__pages
+                                    a.pagination__link.pagination__link--active(href="") 1
+                                    a.pagination__link(href="") 2
+                                    a.pagination__link(href="") ...
+                                    a.pagination__link(href="") 6
+                                    a.pagination__link(href="") 7
+                                div.pagination__arrows
+                                    a.pagination__arrow.pagination__arrow--prev(href="")
+                                    a.pagination__arrow.pagination__arrow--next(href="")
+
+                        div.press__right.press__right--media
+                            div.press-posts
+                                p.press-posts__title Popular posts
+
+                                a.press-posts__item(href="")
+                                    span.press-posts__info 23 October, 2020
+                                    span.press-posts__info 5 min read
+                                    p.press-posts__name FIO — All of Your Blockchain <br />Accounts in One Place
+                                a.press-posts__item(href="")
+                                    span.press-posts__info 24 October, 2020
+                                    span.press-posts__info 5 min read
+                                    p.press-posts__name Populous (PPT) Coin Price <br />Prediction (2020)
+                                a.press-posts__item(href="")
+                                    span.press-posts__info 25 October, 2020
+                                    span.press-posts__info 5 min read
+                                    p.press-posts__name Mining Zilliqa is a different <br />kind of coin extracting
+
+        // FOOTER
+        include ../components/footer.pug
+
+        // MENU SCREEN
+        include ../components/menu-screen.pug
+
+
+        // SCRIPTS
+        include ../components/scripts.pug

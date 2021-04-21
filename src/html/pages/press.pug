@@ -1,0 +1,85 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Press Releases | Levitee
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+        link(rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico")
+    body
+        section.top
+            div.top__ellipse1
+            div.top__ellipse2
+            div.top__ellipse3-press
+            div.top__ellipse4-press
+
+            // HEADER
+            include ../components/header.pug
+
+            div.container
+                div.top__flex
+                    div.top__content
+                        h1.top__title Find out the latest news
+                        p.top__text We are on a mission to enhance the wellbeing of society.
+                        button.button.button--violet Become an investor
+                    div.top__img
+                        img(src="img/head.svg" alt="")
+
+                    include ../components/top-menu.pug
+                    +topMenu(2)
+
+                div.press-nav
+                    a.press-nav__item.press-nav__item--active(href="press.html") Press Releases
+                    a.press-nav__item(href="media.html") In the Media
+
+            div.press#startMenu
+                div.container
+                    h2.title Press Releases
+                    p.press__text There is a powerful human ability to heal and elevate oneself when there is  access to the transformative benefits of standardized and quality-controlled integrated wellness tools.
+
+                    div.press__flex
+                        div.press__content
+                            div.press-filters
+                                form.press-search
+                                    input.press-search__input(type="text" placeholder="Search by keywords…")
+                                    button.press-search__button
+                                select.press-select
+                                    option Sort by year
+                                    option Sort by something else
+
+                            div.press-item
+                                p.press-item__date February 17, 2021
+                                p.press-item__title Levitee Labs Announces Closing of Oversubscribed Private Placement
+                                div.press-item__text
+                                    p VANCOUVER, BC / ACCESSWIRE / February 17, 2021 /Levitee Labs Inc. (the "Company" or "Levitee"), a private British Columbia company in the alternative medicine and integrative wellness space, announced today that it has closed (the "Closing") a heavily oversubscribed non-brokered private placement (the "Private Placement") through the issuance of a total of 21,140,000 subscription receipts (each, a "Subscription Receipt") of the Company at a price of $0.50 per Subscription Receipt, for aggregate gross proceeds of $10,570,000.
+                                    p Each Subscription Receipt will be convertible, without additional payment, into one unit of the Company (a "Unit") following the satisfaction of the following conditions (the "Escrow Release Conditions"): (i) Levitee obtaining a final receipt on behalf of each of the securities regulatory authorities in the Provinces of Canada in which Subscription Receipts have been sold for a final prospectus qualifying the issuance of the Shares (defined herein) and the Warrants (defined herein); and (ii) Levitee receiving conditional approval for the listing of the Shares on the Canadian Securities Exchange (the "Exchange").
+                                    p Each Unit will consist of one common share (a "Share") of the Company and one-half of one common share purchase warrant (each whole warrant, a "Warrant"). Each Warrant will be exercisable into one Share at a price of $0.75 per Share for a period of three (3) years following the issuance date. Cash finder's fees and finder's warrants (each, a "Finder's Warrant") will be issued on release of the funds from the Private Placement to the Company on satisfaction of the Escrow Release Conditions. Each Finder's Warrant will be exercisable for two (2) years into one Share at a price of $0.75 per Share.
+                                    p The gross proceeds raised in connection with the Private Placement will be held in escrow pending satisfaction of the Escrow Release Conditions. Levitee intends to use the proceeds from the Private Placement to fund acquisitions, working capital purposes and for fees associated with listing the Shares on the Exchange (the "Listing")...
+
+                            div.pagination
+                                div.pagination__pages
+                                    a.pagination__link.pagination__link--active(href="") 1
+                                    a.pagination__link(href="") 2
+                                    a.pagination__link(href="") ...
+                                    a.pagination__link(href="") 6
+                                    a.pagination__link(href="") 7
+                                div.pagination__arrows
+                                    a.pagination__arrow.pagination__arrow--prev(href="")
+                                    a.pagination__arrow.pagination__arrow--next(href="")
+
+                        div.press__right
+                            div.press-contact
+                                img(src='img/press-contact.svg' alt="")
+                                p.press-contact__text Would you like to know more?
+                                button.button.button--full Contact us
+
+        // FOOTER
+        include ../components/footer.pug
+
+        // MENU SCREEN
+        include ../components/menu-screen.pug
+
+
+        // SCRIPTS
+        include ../components/scripts.pug

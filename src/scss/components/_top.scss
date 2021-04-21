@@ -85,6 +85,47 @@
     }
   }
 
+  &__ellipse3-press {
+    position: absolute;
+    width: 659px;
+    height: 1662px;
+    background: url('../img/press-top3.png');
+    left: 0;
+    top: 610px;
+
+    @media (max-width: $sm) {
+      top: 1150px;
+      width: 523px;
+      height: 1147px;
+      background: url('../img/press-top3sm.png');
+    }
+
+    @media (max-width: $xs) {
+      top: 2000px;
+    }
+  }
+
+  &__ellipse4-press {
+    position: absolute;
+    width: 749px;
+    height: 462px;
+    background: url('../img/press-top4.png');
+    right: 0;
+    bottom: 0;
+
+    @media (max-width: $sm) {
+      top: 1600px;
+      bottom: auto;
+      width: 460px;
+      height: 1147px;
+      background: url('../img/press-top4sm.png');
+    }
+
+    @media (max-width: $xs) {
+      top: 2400px;
+    }
+  }
+
   &__flex {
     display: flex;
     align-items: center;
@@ -181,6 +222,7 @@
     &:hover, &--active {
       .top-menu__link {
         color: $violet;
+        font-weight: 700;
 
         &:after {
           border-color: $violet;

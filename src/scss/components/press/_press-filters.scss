@@ -1,0 +1,22 @@
+.press-filters {
+  position: absolute;
+  width: 390px;
+  top: 0;
+  right: 0;
+
+  @media (max-width: $md) {
+    width: 300px;
+  }
+
+  @media (max-width: $sm) {
+    position: relative;
+    margin-bottom: 48px;
+    display: flex;
+    width: 100%;
+  }
+
+  @media (max-width: $xs) {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+}

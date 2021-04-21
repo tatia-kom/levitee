@@ -1,0 +1,56 @@
+mixin topMenu(link)
+    nav.top-menu
+        if link==1
+            div.top-menu__item.top-menu__item--active
+                a.top-menu__link(href="learn.html") Learn
+        else
+            div.top-menu__item
+                a.top-menu__link(href="learn.html") Learn
+        if link==2
+            div.top-menu__item.top-menu__item--active
+                span.top-menu__link News
+                div.top-menu__list
+                    a.top-menu__sublink(href="press.html") Press Releases
+                    a.top-menu__sublink(href="media.html") In the Media
+        else
+            div.top-menu__item
+                span.top-menu__link News
+                div.top-menu__list
+                    a.top-menu__sublink(href="press.html") Press Releases
+                    a.top-menu__sublink(href="media.html") In the Media
+        if link==3
+            div.top-menu__item.top-menu__item--active
+                span.top-menu__link About Us
+                div.top-menu__list
+                    a.top-menu__sublink(href="about.html") Vision & Values
+                    a.top-menu__sublink(href="") Our Team
+        else
+            div.top-menu__item
+                span.top-menu__link About Us
+                div.top-menu__list
+                    a.top-menu__sublink(href="about.html") Vision & Values
+                    a.top-menu__sublink(href="") Our Team
+        if link==4
+            div.top-menu__item.top-menu__item--active
+                span.top-menu__link Investors
+                div.top-menu__list
+                    a.top-menu__sublink(href="") For Investors
+                    a.top-menu__sublink(href="") Stock Information
+        else
+            div.top-menu__item
+                span.top-menu__link Investors
+                div.top-menu__list
+                    a.top-menu__sublink(href="") For Investors
+                    a.top-menu__sublink(href="") Stock Information
+        if link==5
+            div.top-menu__item.top-menu__item--active
+                span.top-menu__link Divisions
+                div.top-menu__list
+                    a.top-menu__sublink(href="") MONKE
+                    a.top-menu__sublink(href="") Sporeo
+        else
+            div.top-menu__item
+                span.top-menu__link Divisions
+                div.top-menu__list
+                    a.top-menu__sublink(href="") MONKE
+                    a.top-menu__sublink(href="") Sporeo

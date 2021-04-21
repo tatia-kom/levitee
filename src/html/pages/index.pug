@@ -25,29 +25,9 @@ html(lang="en")
                         button.button.button--violet Become an investor
                     div.top__img
                         img(src="img/head.svg" alt="")
-                    nav.top-menu
-                        div.top-menu__item.top-menu__item--active
-                            a.top-menu__link(href="") Learn
-                        div.top-menu__item
-                            span.top-menu__link News
-                            div.top-menu__list
-                                a.top-menu__sublink(href="") Press Releases
-                                a.top-menu__sublink(href="") In the Media
-                        div.top-menu__item
-                            span.top-menu__link About Us
-                            div.top-menu__list
-                                a.top-menu__sublink(href="") Vision & Values
-                                a.top-menu__sublink(href="") Our Team
-                        div.top-menu__item
-                            span.top-menu__link Investors
-                            div.top-menu__list
-                                a.top-menu__sublink(href="") For Investors
-                                a.top-menu__sublink(href="") Stock Information
-                        div.top-menu__item
-                            span.top-menu__link Divisions
-                            div.top-menu__list
-                                a.top-menu__sublink(href="") MONKE
-                                a.top-menu__sublink(href="") Sporeo
+
+                    include ../components/top-menu.pug
+                    +topMenu()
 
             div.advantages#startMenu
                 div.container
@@ -141,68 +121,13 @@ html(lang="en")
                                 span 15 min read
                             p.media-card__title Tips To Send & Receive Money Quick and Safely
 
-                a.button.button--violet.button--center(href="") Read more
+                a.button.button--violet.button--center(href="media.html") Read more
 
         // FOOTER
         include ../components/footer.pug
 
         // MENU SCREEN
-
-        section.menu-screen
-            div.container.menu-screen__content
-                div.menu-screen-top
-                    a.menu-screen-top__logo(href="index.html")
-                        div
-                            img(src="img/logo-icon-white.svg" alt="")
-                        img(src="img/logo-text-white.svg" alt="")
-                    a.menu-screen-top__lang(href="") Fr
-                    a.menu-screen-top__lang.menu-screen-top__lang--active(href="") En
-
-                div.menu-screen-main
-                    div.menu-screen-main__flex
-                        div.menu-screen-main__block
-                            span.menu-screen-main__big News
-                            a.menu-screen-main__link(href="") Press releases
-                            a.menu-screen-main__link(href="") In the media
-                        div.menu-screen-main__block
-                            span.menu-screen-main__big About
-                            a.menu-screen-main__link(href="") Vision & Values
-                            a.menu-screen-main__link(href="") Our Team
-                        span
-                        div.menu-screen-main__block
-                            span.menu-screen-main__big Investors
-                            a.menu-screen-main__link(href="") For Investors
-                            a.menu-screen-main__link(href="") Stock Information
-                        div.menu-screen-main__block
-                            span.menu-screen-main__big Devisions
-                            a.menu-screen-main__link(href="") Monke
-                            a.menu-screen-main__link(href="") Sporeo
-                        span
-                        div.menu-screen-main__block
-                            a.menu-screen-main__big(href="") Learn
-                        span
-                        div.menu-screen-main__block
-                            a.menu-screen-main__big(href="") Careers
-                        span
-                        div.menu-screen-main__block
-                            a.menu-screen-main__big(href="") Contact
-
-                div.menu-screen-bottom
-                    div.menu-screen-bottom__form
-                        p.menu-screen-bottom__title.menu-screen-bottom__title--sand Enter email for updates
-                        div.menu-screen-bottom__flex
-                            input.menu-screen-bottom__input(type="text" placeholder="Email")
-                            button.button Submit
-                    div.menu-screen-bottom__side
-                        p.menu-screen-bottom__title Email
-                        a.menu-screen-bottom__link(href="mailto:info@leviteelab.com") info@leviteelab.com
-                    div.menu-screen-bottom__side
-                        p.menu-screen-bottom__title Connect With Us:
-                        div.menu-screen-bottom__flex
-                            a.menu-screen-bottom__link(href="") facebook
-                            a.menu-screen-bottom__link(href="") twitter
-                            a.menu-screen-bottom__link(href="") instagram
-                            a.menu-screen-bottom__link(href="") linkedin
+        include ../components/menu-screen.pug
 
 
         // SCRIPTS

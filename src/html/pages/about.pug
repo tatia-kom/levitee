@@ -1,0 +1,79 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title About | Levitee
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+        link(rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico")
+    body
+        section.top
+            div.top__ellipse1
+            div.top__ellipse2
+
+            // HEADER
+            include ../components/header.pug
+
+            div.container
+                div.top__flex
+                    div.top__content
+                        h1.top__title Manifest your mind
+                        p.top__text We are on a mission to enhance the wellbeing of society.
+                        button.button.button--violet Become an investor
+                    div.top__img
+                        img(src="img/head.svg" alt="")
+
+                    include ../components/top-menu.pug
+                    +topMenu(3)
+
+            div.mission#startMenu
+                div.container
+                    h2.mission__title Our Mission
+                    p.mission__text Wherever you are in your journey, we want you to have access to the compounds and alternative medicine that will improve your state of wellbeing, elevate your health, boost your cognitive threshold and provide profound life-changing experiences that alter your consciousness.
+
+            div.about
+                div.container.about__flex
+                    div.about__images
+                        div.about__img1
+                            img(src="img/media1.jpg" alt="")
+                        div.about__img2
+                            img(src="img/media2.jpg" alt="")
+
+                    div.about__content
+                        h2.about__title Optimizing The Human Eperience
+                        div.about__text
+                            p Wherever you are in your journey, we want you to have access to the compounds and alternative medicine that will improve your state of wellbeing, elevate your health, boost your cognitive threshold and provide.
+                            p Wherever you are in your journey, we want you to have access to the compounds and alternative medicine that will improve your state of wellbeing, elevate your health, boost your cognitive threshold and provide profound life-changing experiences that alter your consciousness.
+
+            div.mission.mission--vision
+                div.container
+                    h2.mission__title Our Vision
+                    p.mission__text Wherever you are in your journey, we want you to have access to the compounds and alternative medicine that will improve your state of wellbeing, elevate your health, boost your cognitive threshold and provide profound life-changing experiences that alter your consciousness.
+
+            div.about.about--reverse
+                div.container.about__flex
+                    div.about__images
+                        div.about__images-left
+                            div.about__img3
+                                img(src="img/media2.jpg" alt="")
+                            div.about__img4
+                                img(src="img/media1.jpg" alt="")
+                        div.about__img5
+                            img(src="img/media3.jpg" alt="")
+
+                    div.about__content
+                        h2.about__title Optimizing The Human Eperience
+                        div.about__text
+                            p Wherever you are in your journey, we want you to have access to the compounds and alternative medicine that will improve your state of wellbeing, elevate your health, boost your cognitive threshold and provide.
+                            p Wherever you are in your journey, we want you to have access to the compounds and alternative medicine that will improve your state of wellbeing, elevate your health, boost your cognitive threshold and provide profound life-changing experiences that alter your consciousness.
+
+        // FOOTER
+        include ../components/footer.pug
+
+        // MENU SCREEN
+        include ../components/menu-screen.pug
+
+
+        // SCRIPTS
+        include ../components/scripts.pug

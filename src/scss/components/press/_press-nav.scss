@@ -1,0 +1,49 @@
+.press-nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  @media (max-width: $xs) {
+    flex-direction: column;
+  }
+
+  &__item {
+    width: calc(50% - 15px);
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $light;
+    box-shadow: 29px 29px 73px rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+    height: 120px;
+    font-family: $fontTitle;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 70px;
+    color: $black;
+
+    @media (max-width: $sm) {
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+    @media (max-width: $xs) {
+      font-size: 36px;
+      line-height: 70px;
+      margin-top: 16px;
+      width: 100%;
+    }
+
+    &:hover {
+      background: $violet;
+      color: white;
+    }
+
+    &--active {
+      pointer-events: none;
+      background: $dark;
+      color: white;
+    }
+  }
+}

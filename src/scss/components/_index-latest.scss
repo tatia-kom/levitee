@@ -114,6 +114,9 @@
 
     color: $black;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s;
   }
 
   &__title {
@@ -148,6 +151,7 @@
     flex-grow: 1;
     overflow: hidden;
     margin-top: 8px;
+    transition: 0.3s;
 
     @media (max-width: $sm) {
       margin-top: 30px;

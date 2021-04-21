@@ -170,3 +170,89 @@ footer {
         color: $light;
     }
 }
+
+.pagination {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $xs) {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 48px;
+    }
+
+    &__pages {
+        flex-grow: 1;
+        display: flex;
+
+        @media (max-width: $xs) {
+            margin-top: 40px;
+        }
+    }
+
+    &__link {
+        @extend %t1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 12px;
+        color: $black;
+        border: 1px solid $violet;
+        width: 40px;
+        height: 40px;
+        border-radius: 6px;
+
+        &:hover {
+            background: $violet;
+            color: white;
+        }
+
+        &--active {
+            pointer-events: none;
+            background: $violet;
+            color: white;
+        }
+
+        &:last-child {
+            @media (max-width: $xs) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__arrows {
+        display: flex;
+        flex-shrink: 0;
+    }
+
+    &__arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 14px;
+        border: 1px solid transparent;
+        width: 40px;
+        height: 40px;
+        border-radius: 6px;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &:hover {
+            border-color: $violet;
+        }
+
+        &--prev {
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='10' viewBox='0 0 24 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 5C3.31717 6.10526 7.39088 8 9.9515 10L8.14743 5.52632L24 5.52632V4.47368L8.14743 4.47368L9.9515 0C7.39088 2 3.31717 3.89474 0 5Z' fill='%23111429'/%3e%3c/svg%3e ");
+
+            @media (max-width: $xs) {
+                margin-left: 0;
+            }
+        }
+
+        &--next {
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='10' viewBox='0 0 24 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M24 5C20.6828 3.89474 16.6091 2 14.0485 0L15.8526 4.47368H0V5.52632H15.8526L14.0485 10C16.6091 8 20.6828 6.10526 24 5Z' fill='%23111429'/%3e%3c/svg%3e ");
+        }
+    }
+}

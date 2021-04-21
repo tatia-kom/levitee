@@ -1,0 +1,164 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title In the Media | Levitee
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+        link(rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico")
+    body
+        section.top
+            div.top__ellipse1
+            div.top__ellipse2
+            div.top__ellipse3-press
+            div.top__ellipse4-press
+
+            // HEADER
+            include ../components/header.pug
+
+            div.container
+                div.top__flex
+                    div.top__content
+                        h1.top__title Find out the latest news
+                        p.top__text We are on a mission to enhance the wellbeing of society.
+                        button.button.button--violet Become an investor
+                    div.top__img
+                        img(src="img/head.svg" alt="")
+
+                    include ../components/top-menu.pug
+                    +topMenu(2)
+
+                div.press-nav
+                    a.press-nav__item(href="press.html") Press Releases
+                    a.press-nav__item.press-nav__item--active(href="media.html") In the Media
+
+            div.press#startMenu
+                div.container
+                    h2.title In the Media
+                    p.press__text There is a powerful human ability to heal and elevate oneself when there is  access to the transformative benefits of standardized and quality-controlled integrated wellness tools.
+
+                    div.press__flex
+                        div.press__content
+                            div.press-filters
+                                form.press-search.press-search--media
+                                    input.press-search__input(type="text" placeholder="Search by keywords…")
+                                    button.press-search__button
+
+                            div.press__media
+                                a.media-card(href="")
+                                    div.media-card__img
+                                        img(src="img/media3.jpg" alt="")
+                                    div.media-card__content
+                                        p.media-card__logo
+                                            img(src="img/forbes-logo.svg" alt="")
+                                        div.media-card__info
+                                            span 30 October, 2019
+                                            span 15 min read
+                                        p.media-card__title Tips To Send & Receive Money Quick and Safely
+                                a.media-card(href="")
+                                    div.media-card__img
+                                        img(src="img/media1.jpg" alt="")
+                                    div.media-card__content
+                                        p.media-card__logo
+                                            img(src="img/reuters-logo.svg" alt="")
+                                        div.media-card__info
+                                            span 30 October, 2019
+                                            span 15 min read
+                                        p.media-card__title Tips To Send & Receive Money Quick and Safely
+                                a.media-card(href="")
+                                    div.media-card__img
+                                        img(src="img/media2.jpg" alt="")
+                                    div.media-card__content
+                                        p.media-card__logo
+                                            img(src="img/forbes-logo.svg" alt="")
+                                        div.media-card__info
+                                            span 30 October, 2019
+                                            span 15 min read
+                                        p.media-card__title Tips To Send & Receive Money Quick and Safely
+                                a.media-card(href="")
+                                    div.media-card__img
+                                        img(src="img/media3.jpg" alt="")
+                                    div.media-card__content
+                                        p.media-card__logo
+                                            img(src="img/forbes-logo.svg" alt="")
+                                        div.media-card__info
+                                            span 30 October, 2019
+                                            span 15 min read
+                                        p.media-card__title Tips To Send & Receive Money Quick and Safely
+                                a.media-card(href="")
+                                    div.media-card__img
+                                        img(src="img/media1.jpg" alt="")
+                                    div.media-card__content
+                                        p.media-card__logo
+                                            img(src="img/reuters-logo.svg" alt="")
+                                        div.media-card__info
+                                            span 30 October, 2019
+                                            span 15 min read
+                                        p.media-card__title Tips To Send & Receive Money Quick and Safely
+                                a.media-card(href="")
+                                    div.media-card__img
+                                        img(src="img/media2.jpg" alt="")
+                                    div.media-card__content
+                                        p.media-card__logo
+                                            img(src="img/forbes-logo.svg" alt="")
+                                        div.media-card__info
+                                            span 30 October, 2019
+                                            span 15 min read
+                                        p.media-card__title Tips To Send & Receive Money Quick and Safely
+
+
+                            div.pagination
+                                div.pagination__pages
+                                    a.pagination__link.pagination__link--active(href="") 1
+                                    a.pagination__link(href="") 2
+                                    a.pagination__link(href="") ...
+                                    a.pagination__link(href="") 6
+                                    a.pagination__link(href="") 7
+                                div.pagination__arrows
+                                    a.pagination__arrow.pagination__arrow--prev(href="")
+                                    a.pagination__arrow.pagination__arrow--next(href="")
+
+                        div.press__right.press__right--media
+                            div.press-feed
+                                p.press-feed__name Related Media
+                                a.press-feed__item(href="")
+                                    div.press-feed__logo
+                                        img(src="img/bbc.png" alt="")
+                                    span.press-feed__info 30 October, 2019
+                                    span.press-feed__info 15 min read
+                                    p.press-feed__title Client makes payment to BlocFX through processing company
+                                a.press-feed__item(href="")
+                                    div.press-feed__logo
+                                        img(src="img/bbc.png" alt="")
+                                    span.press-feed__info 30 October, 2019
+                                    span.press-feed__info 15 min read
+                                    p.press-feed__title Client makes payment to BlocFX through processing company
+                                a.press-feed__item(href="")
+                                    div.press-feed__logo
+                                        img(src="img/bbc.png" alt="")
+                                    span.press-feed__info 30 October, 2019
+                                    span.press-feed__info 15 min read
+                                    p.press-feed__title Client makes payment to BlocFX through processing company
+                                a.press-feed__item(href="")
+                                    div.press-feed__logo
+                                        img(src="img/bbc.png" alt="")
+                                    span.press-feed__info 30 October, 2019
+                                    span.press-feed__info 15 min read
+                                    p.press-feed__title Client makes payment to BlocFX through processing company
+                                a.press-feed__item(href="")
+                                    div.press-feed__logo
+                                        img(src="img/bbc.png" alt="")
+                                    span.press-feed__info 30 October, 2019
+                                    span.press-feed__info 15 min read
+                                    p.press-feed__title Client makes payment to BlocFX through processing company
+
+        // FOOTER
+        include ../components/footer.pug
+
+        // MENU SCREEN
+        include ../components/menu-screen.pug
+
+
+        // SCRIPTS
+        include ../components/scripts.pug
