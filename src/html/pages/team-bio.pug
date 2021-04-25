@@ -1,0 +1,66 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Team Bio | Levitee
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+        link(rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico")
+    body
+        section.top
+            div.top__ellipse1
+            div.top__ellipse2
+            div.top__ellipse3
+
+            // HEADER
+            include ../components/header.pug
+
+            div.container
+                div.top__flex
+                    div.top__content
+                        h1.top__title Explore our team
+                        p.top__text Our mission is to improve the well-being of society.
+                        button.button.button--violet Become an investor
+                    div.top__img
+                        img(src="img/head.svg" alt="")
+
+                    include ../components/top-menu.pug
+                    +topMenu(3)
+
+            div.team-bio#startMenu
+                div.container
+                    div.team-bio__flex
+                        div.team-bio__img
+                            img(src="img/team-big1.png" alt="")
+                        div.team-bio__content
+                            p.team-bio__title About Founder <br />and CEO
+                            div.team-bio__text
+                                p Innovating the new frontier of integrative wellness requires a multidisciplinary approach. We are looking to hire dynamic individuals with diverse scientific, operations and medical expertise.  We are looking to hire dynamic individuals with diverse scientific, operations and medical expertise.
+                                p Innovating the new frontier of integrative wellness requires a multidisciplinary approach.
+                            p.team-bio__sign Pouya Farmand
+                    div.team-bio__flex.team-bio__flex--reverse
+                        div.team-bio__img
+                            img(src="img/team-big2.png" alt="")
+                        div.team-bio__content
+                            p.team-bio__title Gaining knowledge about health
+                            div.team-bio__text
+                                p Innovating the new frontier of integrative wellness requires a multidisciplinary approach. We are looking to hire dynamic individuals with diverse scientific, operations and medical expertise.  We are looking to hire dynamic individuals with diverse scientific, operations and medical expertise.
+                                p We are looking to hire dynamic individuals with diverse scientific, operations and medical expertise.
+                            p.team-bio__sign Pouya Farmand
+
+        div.mission.mission--vision
+            div.container
+                h2.mission__title Join Levitee Labs
+                p.mission__text.mission__text--small Innovating the new frontier of integrative wellness requires a multidisciplinary approach. We are looking to hire dynamic individuals with diverse scientific, operations and medical expertise.
+                button.button.button--center Join us
+
+        // FOOTER
+        include ../components/footer.pug
+
+        // MENU SCREEN
+        include ../components/menu-screen.pug
+
+
+        // SCRIPTS
+        include ../components/scripts.pug

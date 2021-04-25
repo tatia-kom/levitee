@@ -120,6 +120,14 @@
     }
   }
 
+  &--team {
+    padding-top: 107px;
+
+    .mission__text {
+      margin-top: 0;
+    }
+  }
+
   &__title {
     @extend %h2;
 
@@ -197,5 +205,23 @@
         bottom: -3px;
       }
     }
+
+    &--small {
+      margin-top: 32px;
+      margin-bottom: 48px;
+      font-family: $font;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 150%;
+      max-width: 779px;
+    }
+  }
+
+  &__sign {
+    @extend %h3;
+
+    margin-top: 40px;
+    color: $light;
+    text-align: center;
   }
 }

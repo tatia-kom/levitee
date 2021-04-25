@@ -1,0 +1,258 @@
+.team {
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: $sm) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: $xs) {
+    padding: 120px 0;
+  }
+
+  &__flex {
+    margin-top: 34px;
+    margin-left: -15px;
+    width: calc(100% + 30px);
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: $sm) {
+      margin-top: 18px;
+    }
+
+    @media (max-width: $xs) {
+      margin-left: 0;
+      width: 100%;
+      margin-top: 32px;
+    }
+
+    & + .title {
+      margin-top: 180px;
+
+      @media (max-width: $sm) {
+        margin-top: 64px;
+      }
+
+      @media (max-width: $xs) {
+        margin-top: 80px;
+      }
+    }
+  }
+
+  &__ellipse1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 714px;
+    height: 796px;
+    background: url('../img/team-bg1.png');
+
+    @media (max-width: $sm) {
+      width: 746px;
+      height: 732px;
+      background: url('../img/team-bg1sm.png');
+    }
+
+    @media (max-width: $xs) {
+      width: 375px;
+      height: 556px;
+      right: auto;
+      left: 0;
+      background: url('../img/team-bg1xs.png');
+    }
+  }
+
+  &__ellipse2 {
+    position: absolute;
+    top: 750px;
+    left: 0;
+    width: 659px;
+    height: 1662px;
+    background: url('../img/press-top3.png');
+
+    @media (max-width: $md) {
+      top: 900px;
+    }
+
+    @media (max-width: $sm) {
+      width: 548px;
+      height: 1148px;
+      left: auto;
+      right: 0;
+      top: 500px;
+      background: url('../img/team-bg2sm.png');
+    }
+
+    @media (max-width: $xs) {
+      width: 375px;
+      height: 1227px;
+      left: auto;
+      right: 0;
+      top: 700px;
+      background: url('../img/team-bg2xs.png');
+    }
+  }
+
+  &__ellipse3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 761px;
+    height: 710px;
+    background: url('../img/team-bg3.png');
+
+    @media (max-width: $sm) {
+      width: 548px;
+      height: 1148px;
+      left: auto;
+      right: 0;
+      top: auto;
+      bottom: 400px;
+      background: url('../img/team-bg2sm.png');
+    }
+
+    @media (max-width: $xs) {
+      width: 375px;
+      height: 1227px;
+      left: auto;
+      right: 0;
+      bottom: 1100px;
+      background: url('../img/team-bg2xs.png');
+    }
+  }
+
+  &__ellipse4 {
+    display: none;
+    position: absolute;
+
+    @media (max-width: $sm) {
+      display: block;
+      width: 546px;
+      height: 890px;
+      left: 0;
+      bottom: 0;
+      background: url('../img/team-bg4sm.png');
+    }
+
+    @media (max-width: $xs) {
+      width: 374px;
+      height: 501px;
+      left: auto;
+      right: 0;
+      background: url('../img/team-bg4xs.png');
+    }
+  }
+
+  .container {
+    position: relative;
+  }
+}
+
+.team-card {
+  width: calc(25% - 30px);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 15px 0;
+  background: $light;
+  box-shadow: 10px 20px 54px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 40px 10px;
+
+  @media (max-width: $md) {
+    width: calc(33.33% - 30px);
+  }
+
+  @media (max-width: $sm) {
+    width: calc(50% - 30px);
+  }
+
+  @media (max-width: $xs) {
+    width: 100%;
+    margin: 16px 0 0;
+    box-shadow: none;
+  }
+
+  &:hover {
+    background: $dark;
+
+    .team-card__post,
+    .team-card__name,
+    .team-card__link {
+      color: $light;
+    }
+  }
+
+  &__img {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
+
+    @media (max-width: $xs) {
+      width: 120px;
+      height: 120px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__post {
+    @extend %t2;
+
+    margin-top: 24px;
+    color: $black;
+    transition: 0.3s;
+    text-align: center;
+
+    @media (max-width: $sm) {
+      margin-top: 52px;
+    }
+
+    @media (max-width: $xs) {
+      margin-top: 16px;
+    }
+  }
+
+  &__name {
+    @extend %h3;
+
+    margin-top: 6px;
+    margin-bottom: auto;
+    color: $black;
+    transition: 0.3s;
+    text-align: center;
+
+    @media (max-width: $sm) {
+      margin-top: 8px;
+    }
+  }
+
+  &__link {
+    @extend %t2;
+
+    text-decoration: underline;
+    font-weight: bold;
+    color: $violet;
+    margin-top: 26px;
+    transition: 0.3s;
+    text-align: center;
+
+    @media (max-width: $sm) {
+      margin-top: 39px;
+    }
+
+    @media (max-width: $xs) {
+      margin-top: 24px;
+    }
+  }
+}

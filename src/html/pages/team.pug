@@ -1,0 +1,136 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Team | Levitee
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+        link(rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico")
+    body
+        section.top
+            div.top__ellipse1
+            div.top__ellipse2
+
+            // HEADER
+            include ../components/header.pug
+
+            div.container
+                div.top__flex
+                    div.top__content
+                        h1.top__title Explore our team
+                        p.top__text Our mission is to improve the well-being of society.
+                        button.button.button--violet Become an investor
+                    div.top__img
+                        img(src="img/head.svg" alt="")
+
+                    include ../components/top-menu.pug
+                    +topMenu(3)
+
+            div.mission.mission--team#startMenu
+                div.container
+                    p.mission__text Wherever you are in your journey, we want you to have access to the compounds and alternative medicine that will improve your state of wellbeing, elevate your health, boost your cognitive threshold and provide profound life-changing experiences that alter your consciousness.
+                    p.mission__sign Levitee Labs
+
+        section.team
+            div.team__ellipse1
+            div.team__ellipse2
+            div.team__ellipse3
+            div.team__ellipse4
+
+            div.container
+                h2.title Executive Team and Directors
+
+                div.team__flex
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Chief Executive Officer
+                        span.team-card__name Pouya Farmand
+                        span.team-card__link Show more
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Chief Operating Officer
+                        span.team-card__name Kelly Abbott
+                        span.team-card__link Show more
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Chief Operating Officer
+                        span.team-card__name Mason M. Darabi, CPA
+                        span.team-card__link Show more
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Head of Mergers & Acquisitions
+                        span.team-card__name Ken Osborne, CFA
+                        span.team-card__link Show more
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Executive Vice President
+                        span.team-card__name Marc Momeni
+                        span.team-card__link Show more
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Director
+                        span.team-card__name Yarrow Willard
+                        span.team-card__link Show more
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Director
+                        span.team-card__name Justin Chorbajian
+                        span.team-card__link Show more
+
+                h2.title Advisory Board
+
+                div.team__flex
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Advisor
+                        span.team-card__name Robert Laurie
+                        span.team-card__link Show more
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Capital Markets Advisor
+                        span.team-card__name Lowell Kamin
+                        span.team-card__link Show more
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Advisor
+                        span.team-card__name Stephanie Wilmott
+                        span.team-card__link Show more
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Advisor
+                        span.team-card__name Paul Kroeger
+                        span.team-card__link Show more
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Advisor
+                        span.team-card__name Dr. Brent Hogarth
+                        span.team-card__link Show more
+
+        div.mission.mission--vision
+            div.container
+                h2.mission__title Join Levitee Labs
+                p.mission__text.mission__text--small Innovating the new frontier of integrative wellness requires a multidisciplinary approach. We are looking to hire dynamic individuals with diverse scientific, operations and medical expertise.
+                button.button.button--center Join us
+
+        // FOOTER
+        include ../components/footer.pug
+
+        // MENU SCREEN
+        include ../components/menu-screen.pug
+
+
+        // SCRIPTS
+        include ../components/scripts.pug
