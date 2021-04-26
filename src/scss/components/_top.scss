@@ -132,6 +132,15 @@
     }
   }
 
+  &__ellipse3-investors {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 778px;
+    height: 575px;
+    background: url('../img/investors-bg.png');
+  }
+
   &__flex {
     display: flex;
     align-items: center;
@@ -212,8 +221,31 @@
     display: flex;
     margin-top: 48px;
 
+    @media (max-width: $sm) {
+      justify-content: space-between;
+    }
+
+    @media (max-width: $xs) {
+      flex-direction: column;
+      margin-top: 42px;
+    }
+
+    .button {
+      @media (max-width: $sm) {
+        width: calc(50% - 16px);
+      }
+
+      @media (max-width: $xs) {
+        width: 100%;
+      }
+    }
+
     .button + .button {
       margin-left: 24px;
+
+      @media (max-width: $xs) {
+        margin: 16px 0 0;
+      }
     }
   }
 }

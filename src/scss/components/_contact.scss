@@ -11,6 +11,26 @@
     padding: 120px 0 136px;
   }
 
+  &--presentation {
+    .contact-form__title {
+      max-width: 836px;
+      margin: 0 auto;
+
+      @media (max-width: $xs) {
+        font-size: 40px;
+      }
+    }
+
+    .contact-form__text {
+      max-width: 836px;
+      margin-bottom: 48px;
+    }
+  }
+
+  &--cse {
+    background: $dark;
+  }
+
   &:before {
     content: '';
     display: block;
@@ -121,6 +141,10 @@
     @media (max-width: $xs) {
       width: 100%;
     }
+  }
+
+  .container {
+    position: relative;
   }
 }
 

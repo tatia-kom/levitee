@@ -62,6 +62,17 @@ $(document).ready(function(e) {
             $('.select__list').slideUp();
         }
     });
+
+    $('.cseModalButton').click(function (e) {
+        e.preventDefault();
+        $('.cse-modal').addClass('cse-modal--active');
+        $('body, html').animate({scrollTop: $('.cse-modal').offset().top + 'px'});
+    });
+
+    $('.cse-modal__close').click(function(e) {
+        e.preventDefault();
+        $('.cse-modal').removeClass('cse-modal--active');
+    });
 });
 
 

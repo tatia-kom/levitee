@@ -1,0 +1,127 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Investors | Levitee
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+        link(rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico")
+    body
+        section.top
+            div.top__ellipse1
+            div.top__ellipse2
+            div.top__ellipse3-investors
+
+            // HEADER
+            include ../components/header.pug
+
+            div.container
+                div.top__flex
+                    div.top__content
+                        h1.top__title Our purpose
+                        p.top__text We are on a mission to enhance the wellbeing of society.
+                        div.top__buttons
+                            a.button.button--violet(href="team.html") Team
+                            a.button(href="contact.html") Contact us
+                    div.top__img
+                        img(src="img/head.svg" alt="")
+
+                    include ../components/top-menu.pug
+                    +topMenu(4)
+
+            div.investors#startMenu
+                div.container
+                    div.investors__flex
+                        div.investors__content
+                            h2.title Overview
+                            p.investors__text Levitee Labs has the opportunity to elevate the human experience through innovating standardized pathways to alternative pharmacological solutions that are proven to provide improved wellness outcomes.
+                        div.investors__blocks
+                            div.investors-card
+                                img(src="img/investors-icon1.svg" alt="")
+                                p.investors-card__title Defined route
+                                p.investors-card__text Defined route to capture nutraceuticals and superfoods market share to proactively elevate global wellness through ‘over the counter’ consumer packaged goods.
+                            div.investors-card
+                                img(src="img/investors-icon2.svg" alt="")
+                                p.investors-card__title Quality-control
+                                p.investors-card__text Building an innovative, standardized, and quality-controlled mushroom spawn and substrate cultivation facility.
+                            div.investors-card
+                                img(src="img/investors-icon3.svg" alt="")
+                                p.investors-card__title Financially assets
+                                p.investors-card__text Financially-sustainable integrated wellness assets that are complementary to the evolving psychedelic industry.
+                            div.investors-card
+                                img(src="img/investors-icon4.svg" alt="")
+                                p.investors-card__title Leadership team
+                                p.investors-card__text Leadership team brought together through diverse and extensive experience driving acquisition, development, formulation, manufacturing and direct-to-consumer distribution.
+
+        section.contact-form
+            div.container
+                h2.contact-form__title Contact us if you want to <br />become our investor
+                p.contact-form__text We are always available to answer any of your questions. Please use the form below or contact us directly.
+
+                div.contact-form__content
+                    div.contact-form__flex
+                        div.contact-form__side
+                            label.form-label Full name*
+                            input.form-input(type="text" placeholder="First name Last name")
+                        div.contact-form__side
+                            label.form-label Email address*
+                            input.form-input(type="text" placeholder="Enter your email address")
+                        div.contact-form__side
+                            label.form-label Company*
+                            input.form-input(type="text" placeholder="Entered")
+
+                    label.form-label Message
+                    textarea.form-textarea(placeholder="Type your message...")
+
+                    div.form-checkbox
+                        input(type="checkbox" id="updatesCheckbox")
+                        label(for="updatesCheckbox") I would like to receive email updates and general information about Levitee Labs
+
+                    button.button.button--center Send
+
+        section.investors-news
+            div.container
+                h2.title.title--center News
+                div.investors-news__flex
+                    a.media-card.media-card--big(href="")
+                        div.media-card__img
+                            img(src="img/media1.jpg" alt="")
+                        div.media-card__content
+                            p.media-card__logo
+                                img(src="img/reuters-logo.svg" alt="")
+                            div.media-card__info
+                                span 30 October, 2019
+                                span 15 min read
+                            p.media-card__title Tips To Send & Receive Money Quick and Safely. <br />Financially-sustainable integrated wellness assets
+                    a.media-card(href="")
+                        div.media-card__img
+                            img(src="img/media2.jpg" alt="")
+                        div.media-card__content
+                            p.media-card__logo
+                                img(src="img/reuters-logo.svg" alt="")
+                            div.media-card__info
+                                span 30 October, 2019
+                                span 15 min read
+                            p.media-card__title Tips To Send & Receive Money Quick and Safely
+                    a.investors-news__block(href="learn.html") Learn more
+                    a.media-card.media-card--big(href="")
+                        div.media-card__img
+                            img(src="img/media3.jpg" alt="")
+                        div.media-card__content
+                            p.media-card__logo
+                                img(src="img/reuters-logo.svg" alt="")
+                            div.media-card__info
+                                span 30 October, 2019
+                                span 15 min read
+                            p.media-card__title Tips To Send & Receive Money Quick and Safely. <br />Financially-sustainable integrated wellness assets
+
+        // FOOTER
+        include ../components/footer.pug
+
+        // MENU SCREEN
+        include ../components/menu-screen.pug
+
+
+        // SCRIPTS
+        include ../components/scripts.pug
