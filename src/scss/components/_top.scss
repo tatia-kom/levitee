@@ -103,6 +103,12 @@
     @media (max-width: $xs) {
       top: 2000px;
     }
+
+    &--careers {
+      @media (max-width: $sm) {
+        display: none;
+      }
+    }
   }
 
   &__ellipse4-press {
@@ -143,7 +149,7 @@
   }
 
   &__content {
-    width: 642px;
+    width: 670px;
     flex-shrink: 0;
 
     @media (max-width: $sm) {
@@ -199,6 +205,15 @@
 
     @media (max-width: $xs) {
       width: 220px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    margin-top: 48px;
+
+    .button + .button {
+      margin-left: 24px;
     }
   }
 }

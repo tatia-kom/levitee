@@ -1,0 +1,92 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Contact | Levitee
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+        link(rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico")
+    body
+        section.top
+            div.top__ellipse1
+            div.top__ellipse2
+
+            // HEADER
+            include ../components/header.pug
+
+            div.container
+                div.top__flex
+                    div.top__content
+                        h1.top__title Join Levitee Labs
+                        div.top__buttons
+                            button.button.button--violet Become an investor
+                            button.button Team
+                    div.top__img
+                        img(src="img/head.svg" alt="")
+
+                    include ../components/top-menu.pug
+                    +topMenu(7)
+
+        section.contact-form
+            div.container
+                h2.contact-form__title Contact us
+                p.contact-form__text We are always available to answer any of your questions. Please use the form below or contact us directly.
+
+                div.contact-form__content
+                    div.contact-form__flex
+                        div.contact-form__side
+                            label.form-label Full name*
+                            input.form-input(type="text" placeholder="First name Last name")
+                        div.contact-form__side
+                            label.form-label Email address*
+                            input.form-input(type="text" placeholder="Enter your email address")
+                        div.contact-form__side
+                            label.form-label Inquiry type*
+                            div.select
+                                input.select__input(type="hidden" name="")
+                                div.select__head Select 1 of 5 otions
+                                ul.select__list(style="display: none;")
+                                    li.select__item General
+                                    li.select__item Media
+                                    li.select__item Clinics
+                                    li.select__item Nutraceuticals
+                                    li.select__item Investors
+
+                    label.form-label Message
+                    textarea.form-textarea(placeholder="Type your message...")
+
+                    div.form-checkbox
+                        input(type="checkbox" id="updatesCheckbox")
+                        label(for="updatesCheckbox") I would like to receive email updates and general information about Levitee Labs
+
+                    button.button.button--center Send
+
+        section.contact
+            div.container
+                h2.title.title--center How to find us
+
+                div.contact__block
+                    // insert img, iframe or div with class "contact__map" like below
+                    img.contact__map(src="img/map.png" alt="")
+
+                    div.contact__content
+                        div.contact-item
+                            p.contact-item__title.contact-item__title--email Email
+                            p.contact-item__text info@leviteelab.com
+                        div.contact-item
+                            p.contact-item__title.contact-item__title--phone Phone
+                            p.contact-item__text 250 465-8640
+                        div.contact-item
+                            p.contact-item__title.contact-item__title--address Address
+                            p.contact-item__text 215 - 800 W Pender <br />Vancouver, BC <br />V6C 1J8
+
+        // FOOTER
+        include ../components/footer.pug
+
+        // MENU SCREEN
+        include ../components/menu-screen.pug
+
+
+        // SCRIPTS
+        include ../components/scripts.pug

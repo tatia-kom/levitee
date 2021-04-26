@@ -1,0 +1,159 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Careers | Levitee
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+        link(rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico")
+    body
+        section.top
+            div.top__ellipse1
+            div.top__ellipse2
+            div.top__ellipse3-press.top__ellipse3-press--careers
+
+            // HEADER
+            include ../components/header.pug
+
+            div.container
+                div.top__flex
+                    div.top__content
+                        h1.top__title We strive to be better
+                        p.top__text We are on a mission to enhance the wellbeing of society.
+                    div.top__img
+                        img(src="img/head.svg" alt="")
+
+                    include ../components/top-menu.pug
+                    +topMenu(6)
+
+            div.careers#startMenu
+                div.container
+                    h2.title Current Opportunities
+                    p.careers__text Enter your wishes for finding a job in our company, or select from the list and send an application for consideration
+
+                    div.careers__items
+                        div.careers-card
+                            div.careers-card__content
+                                p.careers-card__title Ecommerce and Product Manager
+                                div.careers-card__info
+                                    p Vancouver - BC, Canada
+                                    p
+                                        span Full Time
+                                        span Permanent
+                            a.button.button--violet(href="careers-resume.html") View Job
+                        div.careers-card
+                            div.careers-card__content
+                                p.careers-card__title Ecommerce and Product Manager
+                                div.careers-card__info
+                                    p Vancouver - BC, Canada
+                                    p
+                                        span Full Time
+                                        span Permanent
+                            a.button.button--violet(href="careers-resume.html") View Job
+                        div.careers-card
+                            div.careers-card__content
+                                p.careers-card__title Ecommerce and Product Manager
+                                div.careers-card__info
+                                    p Vancouver - BC, Canada
+                                    p
+                                        span Full Time
+                                        span Permanent
+                            a.button.button--violet(href="careers-resume.html") View Job
+
+        section.team
+            div.team__ellipse1.team__ellipse1--careers
+            div.team__ellipse2
+            div.team__ellipse3
+            div.team__ellipse4
+
+            div.container
+                h2.title Executive Team and Directors
+
+                div.team__flex
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Chief Executive Officer
+                        span.team-card__name Pouya Farmand
+                        span.team-card__link Show more
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Chief Operating Officer
+                        span.team-card__name Kelly Abbott
+                        span.team-card__link Show more
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Chief Operating Officer
+                        span.team-card__name Mason M. Darabi, CPA
+                        span.team-card__link Show more
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Head of Mergers & Acquisitions
+                        span.team-card__name Ken Osborne, CFA
+                        span.team-card__link Show more
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Executive Vice President
+                        span.team-card__name Marc Momeni
+                        span.team-card__link Show more
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Director
+                        span.team-card__name Yarrow Willard
+                        span.team-card__link Show more
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Director
+                        span.team-card__name Justin Chorbajian
+                        span.team-card__link Show more
+
+                h2.title Advisory Board
+
+                div.team__flex
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Advisor
+                        span.team-card__name Robert Laurie
+                        span.team-card__link Show more
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Capital Markets Advisor
+                        span.team-card__name Lowell Kamin
+                        span.team-card__link Show more
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Advisor
+                        span.team-card__name Stephanie Wilmott
+                        span.team-card__link Show more
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Advisor
+                        span.team-card__name Paul Kroeger
+                        span.team-card__link Show more
+                    a.team-card(href="team-bio.html")
+                        div.team-card__img
+                            img(src="img/team1.png" alt="")
+                        span.team-card__post Advisor
+                        span.team-card__name Dr. Brent Hogarth
+                        span.team-card__link Show more
+
+        // FOOTER
+        include ../components/footer.pug
+
+        // MENU SCREEN
+        include ../components/menu-screen.pug
+
+
+        // SCRIPTS
+        include ../components/scripts.pug

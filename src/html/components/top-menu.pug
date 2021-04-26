@@ -54,3 +54,15 @@ mixin topMenu(link)
                 div.top-menu__list
                     a.top-menu__sublink(href="") MONKE
                     a.top-menu__sublink(href="") Sporeo
+        if link == 6
+            div.top-menu__item.top-menu__item--active
+                a.top-menu__link(href="careers.html") Careers
+        else
+            div.top-menu__item
+                a.top-menu__link(href="careers.html") Careers
+        if link == 7
+            div.top-menu__item.top-menu__item--active
+                a.top-menu__link(href="contact.html") Contact
+        else
+            div.top-menu__item
+                a.top-menu__link(href="contact.html") Contact

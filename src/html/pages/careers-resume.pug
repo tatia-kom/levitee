@@ -1,0 +1,110 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Careers resume | Levitee
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+        link(rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico")
+    body
+        section.top
+            div.top__ellipse1
+            div.top__ellipse2
+            div.top__ellipse3-press
+            div.top__ellipse4-press
+
+            // HEADER
+            include ../components/header.pug
+
+            div.container
+                div.top__flex
+                    div.top__content
+                        h1.top__title We strive to be better
+                        p.top__text We are on a mission to enhance the wellbeing of society.
+                    div.top__img
+                        img(src="img/head.svg" alt="")
+
+                    include ../components/top-menu.pug
+                    +topMenu(6)
+
+            div.careers-resume#startMenu
+                div.container
+                    h2.title Product Manager
+
+                    div.careers-resume__flex
+                        div.careers-resume__content
+                            div.careers-resume-card
+                                p.careers-resume-card__title Ideal Candidate
+                                div.careers-resume-card__text
+                                    ul
+                                        li Experience in eCommerce (Amazon & other channels), product development, digital marketing, and entrepreneurship
+                                        li Has in-depth understanding of eCommerce logistics
+                                        li Experience managing Facebook and google advertising campaigns
+                                        li Has in-depth understanding of eCommerce logistics
+                                        li Analytically driven, with proven success in translating data into insights and action
+                                        li Ability to manage multiple brands through multiple channels – eCommerce and brick & mortar
+                                        li Experience in eCommerce (Amazon & other channels), product development, digital marketing, and entrepreneurship
+                                        li Experience in building and managing a team of virtual assistants
+
+                            div.careers-resume-card
+                                p.careers-resume-card__title Job Description
+                                div.careers-resume-card__text
+                                    p An early stage health and alternative medicine company is looking for an individual to lead the growth of multiple nutraceutical brands. This would include new product development, digital marketing, building and overseeing a team of virtual assistants, and generally managing day to day operations. This team member will join the Vancouver office with the flexibility to work from home majority of the time.
+
+                            div.careers-resume-card
+                                p.careers-resume-card__title Permanent
+                                div.careers-resume-card__text
+                                    p We are committed to working together to elevate the world. Together, we are co-creating a future of integrated wellness with psychedelic synergies that otherwise wouldn’t exist.
+
+                            div.careers-resume-card
+                                p.careers-resume-card__title Compensation
+                                div.careers-resume-card__text
+                                    p Highly dependent on the candidate, compensation will include salary, significant performance bonus opportunities, and stock options.
+
+                            div.careers-resume-card
+                                p.careers-resume-card__title Salary
+                                div.careers-resume-card__text
+                                    p $70,000.00-$120,000.00 Per Year
+
+                        div.careers-resume-form
+                            h2.careers-resume-form__title Apply Now
+                            p.careers-resume-form__text Please apply with a resume and cover letter detailing your experience and why you are a great fit for our team.
+
+                            label.form-label Full name*
+                            input.form-input(type="text" placeholder="First name Last name")
+
+                            label.form-label Email address*
+                            input.form-input(type="text" placeholder="Enter your email address")
+
+                            label.form-label Сity*
+                            input.form-input(type="text" placeholder="Enter your city")
+
+                            label.form-label Phone number*
+                            input.form-input.tel-input(type="text" placeholder="Enter your number")
+
+                            label.form-label Attach your files*
+                            div.careers-resume-form__flex
+                                div.careers-resume-form__side
+                                    button.careers-resume-form__upload Upload Letter
+                                div.careers-resume-form__side
+                                    button.careers-resume-form__upload Upload Resume
+
+                            label.form-label Message
+                            textarea.form-textarea(placeholder="Type your message...")
+
+                            div.form-checkbox
+                                input(type="checkbox" id="updatesCheckbox")
+                                label(for="updatesCheckbox") I would like to receive email updates and general information about Levitee Labs
+
+                            button.button.button--center Apply
+
+        // FOOTER
+        include ../components/footer.pug
+
+        // MENU SCREEN
+        include ../components/menu-screen.pug
+
+
+        // SCRIPTS
+        include ../components/scripts.pug
