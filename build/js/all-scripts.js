@@ -3115,19 +3115,40 @@
 
 $(document).ready(function() {
 
-    $('.advantages__slider').slick({
-        arrows: true,
-        dots: true,
-        swipe: true,
-        infinite: true,
-        speed: 700,
-        variableWidth: true,
-        centerMode: true,
-        slidesToShow: 3
-    });
+
+    if ($('.advantages__slider').length > 0) {
+        $('.advantages__slider').slick({
+            arrows: true,
+            dots: true,
+            swipe: true,
+            infinite: true,
+            speed: 700,
+            variableWidth: true,
+            centerMode: true,
+            slidesToShow: 3
+        });
+    };
 
 });
 $(document).ready(function(e) {
+
+    // triggers for pagination
+	$('.pagination__arrow--next').on('click', function(e) {
+		e.preventDefault()
+		if ($('.pagination__pages .next').length > 0) {
+			window.location.href = $('.pagination__pages .next').attr('href')
+		}
+	})
+
+
+	$('.pagination__arrow--prev').on('click', function(e) {
+		e.preventDefault()
+		if ($('.pagination__pages .prev').length > 0) {
+			window.location.href = $('.pagination__pages .prev').attr('href')
+		}
+	})
+
+
     $(window).scroll(function(e) {
         if ($(window).scrollTop() > 0) {
             $('.header').addClass('header--scroll');
@@ -3159,12 +3180,14 @@ $(document).ready(function(e) {
         });
     }
 
-    $('.tel-input').inputmask({
-        "mask": "+7 (999) 999-99-99"
-        , "placeholder": "_"
-        , showMaskOnHover: false
-        , showMaskOnFocus: true
-    });
+    if ($('.tel-input').length > 0) {
+        $('.tel-input').inputmask({
+            "mask": "+7 (999) 999-99-99"
+            , "placeholder": "_"
+            , showMaskOnHover: false
+            , showMaskOnFocus: true
+        });
+    }    
 
     $('.select').on('click', '.select__head', function () {
         if ($(this).hasClass('open')) {
@@ -3202,9 +3225,5 @@ $(document).ready(function(e) {
         e.preventDefault();
         $('.cse-modal').removeClass('cse-modal--active');
     });
-});
 
-
-
-
-
+  });

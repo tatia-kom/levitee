@@ -186,12 +186,25 @@ footer {
         margin-top: 48px;
     }
 
+    .current {
+        .pagination__link {
+            pointer-events: none;
+            background: $violet;
+            color: white;
+        }
+    }
+
     &__pages {
         flex-grow: 1;
         display: flex;
 
         @media (max-width: $xs) {
             margin-top: 40px;
+        }
+
+        .prev,
+        .next {
+            display: none;
         }
     }
 
@@ -212,6 +225,7 @@ footer {
             background: $violet;
             color: white;
         }
+
 
         &--active {
             pointer-events: none;
