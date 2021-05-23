@@ -65,8 +65,11 @@
 
     &--careers {
       width: 471px;
-      height: 1674px;
-      background: url('../img/careers-bg1.png');
+      //height: 1674px;
+      height: 1100px;
+      //background: url('../img/careers-bg1.png');
+      background: url('../img/top2.svg');
+      transform: scale(-1,1);
     }
   }
 

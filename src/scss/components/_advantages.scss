@@ -27,9 +27,14 @@
       margin-top: 140px;
     }
 
-    .slick-list {
+    .owl-stage-outer {
       overflow: visible;
       height: 310px;
+      transform: translateX(-25px);
+
+      @media (max-width: $xs) {
+        transform: translateX(-18px);
+      }
     }
 
     .slick-arrow {
@@ -64,7 +69,7 @@
       }
     }
 
-    .slick-dots {
+    .owl-dots {
       position: absolute;
       list-style: none;
       bottom: 0;
@@ -76,24 +81,41 @@
       align-items: center;
       justify-content: center;
 
-      li {
+      button {
         margin: 0 10px;
 
-        button {
+        span {
           font-size: 0;
           color: transparent;
           width: 10px;
           height: 10px;
+          display: block;
           border: 1px solid $black;
           transform: rotate(45deg);
           transition: 0.3s;
         }
 
-        &.slick-active {
-          button {
+        &.active {
+          span {
             background: $black;
           }
         }
+      }
+    }
+  }
+
+  .owl-item.center {
+    z-index: 10;
+
+    .advantages-item {
+      background: #153132;
+      color: $light;
+      transform: scale(1.16);
+      margin: 0 30px;
+
+      @media (max-width: $xs) {
+        width: 270px;
+        margin: 0 20px!important;
       }
     }
   }
@@ -102,16 +124,8 @@
     outline: none;
     margin: 0 15px;
 
-    &.slick-current {
-      .advantages-item {
-        background: #153132;
-        color: $light;
-        transform: scale(1.16);
-
-        @media (max-width: $xs) {
-          width: 270px;
-        }
-      }
+    @media (max-width: $xs) {
+      margin: 0 4px;
     }
   }
 
@@ -131,6 +145,12 @@
 
   @media (max-width: $xs) {
     padding: 50px 16px 0;
+    width: 270px;
+  }
+
+  &--big {
+    transform: scale(1.16);
+    margin: 0 30px;
   }
 
   &__num {

@@ -148,6 +148,7 @@
     background: transparent;
     border: 0;
     border-bottom: 1px solid $light;
+    border-radius: 0!important;
 
     @include placeholderColor($light);
   }

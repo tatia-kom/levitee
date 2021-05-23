@@ -40,7 +40,7 @@
       top: 270px;
       width: 375px;
       height: 904px;
-      background: url('../img/top2xs.svg');
+      //background: url('../img/top2xs.svg');
     }
   }
 
@@ -61,7 +61,7 @@
     @media (max-width: $xs) {
       width: 375px;
       height: 904px;
-      background: url('../img/top3xs.png');
+      //background: url('../img/top3xs.png');
     }
   }
 
@@ -81,7 +81,21 @@
     @media (max-width: $xs) {
       width: 375px;
       height: 399px;
-      background: url('../img/top4xs.png');
+      background: url('../img/top2.svg');
+    }
+  }
+
+  &__ellipse5 {
+    display: none;
+    position: absolute;
+    width: 460px;
+    height: 788px;
+    right: 0;
+    background: url('../img/top2.svg');
+    bottom: -300px;
+
+    @media (max-width: $xs) {
+      display: block;
     }
   }
 
@@ -278,7 +292,7 @@
       }
 
       .top-menu__list {
-        height: 52px;
+        //height: 52px;
       }
     }
   }
@@ -315,10 +329,10 @@
   }
 
   &__list {
-    margin-right: 3px;
     transition: 0.3s;
     position: relative;
-    height: 0;
+    //height: 0;
+    display: none;
     overflow: hidden;
   }
 
@@ -333,6 +347,7 @@
     justify-content: flex-end;
     align-items: center;
     margin-top: 4px;
+    padding-right: 3px;
 
     &:after {
       content: '';

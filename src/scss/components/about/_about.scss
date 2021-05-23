@@ -70,6 +70,8 @@
     width: calc(50% - 45px);
     flex-shrink: 0;
     position: relative;
+    display: flex;
+    justify-content: center;
 
     @media (max-width: $md) {
       width: calc(50% - 20px);
@@ -84,6 +86,10 @@
       margin-top: 63px;
       display: flex;
       flex-direction: column-reverse;
+    }
+
+    img {
+      max-width: 100%;
     }
   }
 
