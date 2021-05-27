@@ -33,13 +33,6 @@ $(document).ready(function(e) {
         }
     });
 
-    $('.top-menu__item').mouseover(function(e) {
-        $(this).find('.top-menu__list').slideDown(300);
-    });
-    $('.top-menu__item').mouseleave(function(e) {
-        $(this).find('.top-menu__list').slideUp();
-    });
-
     $('.header-menu').click(function(e) {
         e.preventDefault();
 

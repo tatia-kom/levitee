@@ -2,6 +2,10 @@
   overflow: hidden;
   position: relative;
 
+  @media (max-width: $xs) {
+    z-index: 1;
+  }
+
   &__ellipse1 {
     position: absolute;
     width: 908px;
@@ -292,7 +296,7 @@
       }
 
       .top-menu__list {
-        //height: 52px;
+        max-height: 500px;
       }
     }
   }
@@ -329,11 +333,10 @@
   }
 
   &__list {
-    transition: 0.3s;
     position: relative;
-    //height: 0;
-    display: none;
     overflow: hidden;
+    max-height: 0;
+    transition: 0.3s;
   }
 
   &__sublink {

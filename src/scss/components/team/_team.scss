@@ -1,7 +1,7 @@
 .team {
   padding: 120px 0;
   position: relative;
-  overflow: hidden;
+  //overflow: hidden;
 
   @media (max-width: $sm) {
     padding: 100px 0;
@@ -9,6 +9,7 @@
 
   @media (max-width: $xs) {
     padding: 120px 0;
+    z-index: 0;
   }
 
   &__flex {
@@ -65,11 +66,17 @@
 
     &--careers {
       width: 471px;
-      //height: 1674px;
-      height: 1100px;
-      //background: url('../img/careers-bg1.png');
-      background: url('../img/top2.svg');
-      transform: scale(-1,1);
+      height: 1674px;
+      background: url('../img/careers-bg1.png');
+      top: -500px;
+
+      @media (max-width: $xs) {
+        background: url('../img/top2.svg');
+        transform: scale(-1,1);
+        background-size: contain;
+        top: -300px;
+        max-width: 100%;
+      }
     }
   }
 

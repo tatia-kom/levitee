@@ -27,6 +27,10 @@
 
   &__content {
     flex-grow: 1;
+
+    @media (max-width: $sm) {
+      width: 100%;
+    }
   }
 }
 
